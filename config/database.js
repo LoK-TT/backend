@@ -7,5 +7,8 @@ module.exports = ({ env }) => ({
       filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
     },
     useNullAsDefault: true,
+    ssl: {
+      rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
+    },
   },
 });
