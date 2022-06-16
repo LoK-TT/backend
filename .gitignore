@@ -82,7 +82,8 @@ ssl
 nbproject
 public/uploads/*
 !public/uploads/.gitkeep
-
+lok-tt-key
+lok-tt-key.pub
 ############################
 # Node.js
 ############################
